@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xaerisoft AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Universe -->
+    <canvas id="universe-canvas"></canvas>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="glass-panel">
+        <h1 class="neon-text">XAERISOFT AI</h1>
+        <p>Initializing...</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+
+    <!-- Main App -->
+    <div id="app" class="hidden">
+        <!-- Main Content (Full Width) -->
+        <main>
+            <!-- Header diperbarui untuk menampilkan nama dan status AI -->
+            <header class="glass-panel">
+                <div class="header-brand">
+                    <h2 class="neon-text">🧠 Xaerisoft AI</h2>
+                    <span class="status-indicator">🟢 Online</span>
+                </div>
+                <div class="header-info">
+                    <span id="digital-clock">00:00:00</span>
+                </div>
+            </header>
+
+            <div id="chat-container">
+                <div id="chat-history">
+                    <!-- Messages will be injected here -->
+                </div>
+                <div id="typing-indicator" class="hidden">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="input-container glass-panel">
+                <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off">
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="var(--neon-blue)"><path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path></svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modular Scripts -->
+    <script src="normalize.js"></script>
+    <script src="theme.js"></script>
+    <script src="memory.js"></script>
+    <script src="context.js"></script>
+    <script src="search.js"></script>
+    <script src="intent.js"></script>
+    <script src="response.js"></script>
+    <script src="engine.js"></script>
+    <script src="ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
